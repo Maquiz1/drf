@@ -18,6 +18,7 @@ from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
+    path('silk/', include('silk.urls', namespace='silk')),
     path('schema-viewer/', include('schema_viewer.urls')),
     path('api/', include('api.urls')),
     path('admin/', admin.site.urls),
